@@ -2,8 +2,9 @@ import nengo
 import nstbot
 
 bot = nstbot.PushBot()
-#bot.connect(nstbot.Socket('10.162.177.88'))
-bot.connect(nstbot.Socket('10.162.177.94'))
+bot.connect(nstbot.Socket('10.162.177.88'))
+#bot.connect(nstbot.Socket('10.162.177.94'))
+#bot.connect(connection.Serial('/dev/ttyUSB0', baud=12000000))
 bot.retina(True)
 bot.laser(100)
 bot.track_frequencies([100, 100])
